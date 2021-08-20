@@ -5,8 +5,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+
     <title>custom slide</title>
+    <style>
+        photo-slider {
+            position: relative;
+            width: 1080px;
+            display: flex;
+            padding-top: 2em;
+            margin: 0 auto;
+            border: 2px solid black;
+            flex-direction: column;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.5rem;
+        }
+        
+        photo-slider h1,
+        h4 {
+            margin: 0 0 10px 0;
+            text-align: center;
+        }
+        
+        photo-slider .image-container {
+            height: 500px;
+            background-color: black;
+            background-size: contain;
+            margin: 2em auto;
+            background-repeat: no-repeat;
+            background-position: 50%;
+            width: 80%;
+        }
+        
+        photo-slider button {
+            cursor: pointer;
+            background: transparent;
+            border: none;
+            font-size: 48px;
+            color: white;
+            position: absolute;
+            top: 50%;
+        }
+        
+        photo-slider button.back {
+            left: 10%;
+            top: 50%;
+        }
+        
+        photo-slider button.forward {
+            right: 10%;
+            top: 50%;
+        }
+    </style>
 </head>
 
 <body>
